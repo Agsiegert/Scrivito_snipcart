@@ -52,7 +52,7 @@ Scrivito.provideEditingConfig('Homepage', {
       title: 'Intercom app ID',
       description: 'Register at https://www.intercom.com/',
     },
-    snipcartKey: {
+    snipcartApiKey: {
       title: 'Snipcart API Key',
       description: 'Register at https://www.snipcart.com/',
     },
@@ -81,7 +81,7 @@ Scrivito.provideEditingConfig('Homepage', {
         'googleMapsApiKey',
         'googleAnalyticsTrackingId',
         'intercomAppId',
-        'snipcartKey',
+        'snipcartApiKey',
       ],
     },
     socialCardsPropertiesGroup,

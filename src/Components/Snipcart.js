@@ -12,8 +12,8 @@ class Snipcart extends React.Component {
   }
 
   componentDidMount() {
-    Scrivito.load(() => getSnipcartKey()).then(snipcartKey => {
-      if (snipcartKey) {
+    Scrivito.load(() => getSnipcartKey()).then(snipcartApiKey => {
+      if (snipcartApiKey) {
         this.setState({ isSnipcartInstalled: true });
       }
     });
@@ -26,9 +26,9 @@ class Snipcart extends React.Component {
 
     return (
       <Helmet>
-        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-        <script async src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={ `${getSnipcartKey()}` }></script>
-        <link async href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key={ `${getSnipcartKey()}` }></script>
+        <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
       </Helmet>
     );
   }
@@ -41,7 +41,7 @@ function getSnipcartKey() {
     return;
   }
 
-  return rootPage.get('snipcartKey');
+  return rootPage.get('snipcartApiKey');
 }
 
 export default Scrivito.connect(Snipcart);

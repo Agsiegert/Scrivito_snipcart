@@ -17,7 +17,7 @@ Scrivito.provideEditingConfig('SnipcartButtonWidget', {
     },
     weight: {
       title: 'Weight',
-      description: "Weight of product fo shipping.",
+      description: "Weight of product for shipping.",
     },
     description: {
       title: 'Description',
@@ -36,4 +36,7 @@ Scrivito.provideEditingConfig('SnipcartButtonWidget', {
     'description',
     'buttonText',
   ],
+  initialContent: {
+    buttonText: 'Add to cart',
+  },
 });
