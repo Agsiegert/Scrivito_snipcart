@@ -52,6 +52,10 @@ Scrivito.provideEditingConfig('Homepage', {
       title: 'Intercom app ID',
       description: 'Register at https://www.intercom.com/',
     },
+    snipcartKey: {
+      title: 'Snipcart API Key',
+      description: 'Register at https://www.snipcart.com/',
+    },
     showAsLandingPage: {
       title: 'Display this page as a landing page?',
       description: 'Removes the header navigation and only centers the logo instead. Default: No',
@@ -77,6 +81,7 @@ Scrivito.provideEditingConfig('Homepage', {
         'googleMapsApiKey',
         'googleAnalyticsTrackingId',
         'intercomAppId',
+        'snipcartKey',
       ],
     },
     socialCardsPropertiesGroup,

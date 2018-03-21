@@ -7,6 +7,7 @@ import GoogleAnalytics from './Components/GoogleAnalytics';
 import Intercom from './Components/Intercom';
 import Navigation from './Components/Navigation';
 import NotFoundErrorPage from './Components/NotFoundErrorPage';
+import Snipcart from './Components/Snipcart';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <CurrentPageMetaData />
         <GoogleAnalytics />
         <Intercom />
+        <Snipcart />
       </div>
     </ErrorBoundary>
   );
