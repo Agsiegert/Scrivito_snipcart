@@ -3,10 +3,6 @@ import * as Scrivito from 'scrivito';
 Scrivito.provideEditingConfig('SnipcartButtonWidget', {
   title: 'Snipcart item',
   attributes: {
-    productId: {
-      title: 'ID',
-      description: "Id of product",
-    },
     name: {
       title: 'Name',
       description: "Name of product.",
@@ -14,6 +10,10 @@ Scrivito.provideEditingConfig('SnipcartButtonWidget', {
     price: {
       title: 'Price',
       description: "Price of product.",
+    },
+    url: {
+      title: 'URL',
+      description: "URL of product for snipcart to validate.",
     },
     weight: {
       title: 'Weight',
@@ -29,9 +29,9 @@ Scrivito.provideEditingConfig('SnipcartButtonWidget', {
     },
   },
   properties: [
-    'productId',
     'name',
     'price',
+    'url',
     'weight',
     'description',
     'buttonText',

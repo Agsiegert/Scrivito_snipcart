@@ -2,9 +2,11 @@ import * as Scrivito from 'scrivito';
 
 const SnipcartButtonWidget = Scrivito.provideWidgetClass('SnipcartButtonWidget', {
   attributes: {
-    productId: 'string',
+  	image: 'reference',
+    id: 'string',
     name: 'string',
     price: 'string',
+    url: 'string',
     weight: 'string',
     description: 'string',
     buttonText: 'string',
