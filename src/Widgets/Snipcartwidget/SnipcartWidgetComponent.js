@@ -3,11 +3,10 @@ import * as Scrivito from 'scrivito';
 import InPlaceEditingPlaceholder from '../../Components/InPlaceEditingPlaceholder';
 
 Scrivito.provideComponent('SnipcartButtonWidget', ({ widget }) => {
-  const pid = widget.id();
+  const pid = widget.id('productId');
   const name = widget.get('name');
   const price = widget.get('price');
   const url = widget.get('url');
-  const weight = widget.get('weight');
   const description = widget.get('description');
   const buttonText = widget.get('buttonText');
 
@@ -22,7 +21,6 @@ Scrivito.provideComponent('SnipcartButtonWidget', ({ widget }) => {
           data-item-id={ pid }
           data-item-name={ name }
           data-item-price={ price }
-          data-item-weight={ weight }
           data-item-url={ url }
           data-item-description={ description }>
          { buttonText }
